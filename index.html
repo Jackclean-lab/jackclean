@@ -1,104 +1,38 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jackclean – Reinigungsunternehmen</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #0066cc;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      background: #004c99;
-      text-align: center;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: space-around;
-    }
-    .service-card {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: 300px;
-    }
-    footer {
-      background-color: #0066cc;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<header>
-  <h1>Jackclean</h1>
-  <p>Ihr zuverlässiges Reinigungsunternehmen</p>
-</header>
-
-<nav>
-  <a href="#leistungen">Leistungen</a>
-  <a href="#über-uns">Über Uns</a>
-  <a href="#kontakt">Kontakt</a>
-</nav>
-
-<section id="leistungen">
-  <h2>Unsere Leistungen</h2>
-  <div class="services">
-    <div class="service-card">
-      <h3>Gebäudereinigung</h3>
-      <p>Gründliche Reinigung von Büros, Schulen, Praxen und mehr.</p>
+  <!-- Header -->
+  <header class="bg-blue-600 text-white shadow">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-wide">Jackclean</h1>
+      <nav class="space-x-6 text-lg hidden md:flex">
+        <a href="#leistungen" class="hover:text-gray-300 transition">Leistungen</a>
+        <a href="#über-uns" class="hover:text-gray-300 transition">Über Uns</a>
+        <a href="#kontakt" class="hover:text-gray-300 transition">Kontakt</a>
+      </nav>
     </div>
-    <div class="service-card">
-      <h3>Fensterreinigung</h3>
-      <p>Streifenfreie Fensterreinigung – innen und außen.</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-100">
+    <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Ihr zuverlässiges Reinigungsunternehmen</h2>
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto text-gray-700 mb-8">Professionelle Reinigung für Ihr Zuhause und Büro – sauber, schnell und gründlich.</p>
+      <a href="#kontakt" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Jetzt Kontakt aufnehmen</a>
     </div>
-    <div class="service-card">
-      <h3>Baureinigung</h3>
-      <p>Reinigung nach Bauarbeiten – schnell und professionell.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="über-uns">
-  <h2>Über Uns</h2>
-  <p>Jackclean ist ein junges, dynamisches Reinigungsunternehmen mit Sitz in [Stadt einfügen]. Wir legen großen Wert auf Qualität, Zuverlässigkeit und Kundenzufriedenheit.</p>
-</section>
-
-<section id="kontakt">
-  <h2>Kontakt</h2>
-  <p>📞 Telefon: <strong>0123 456789</strong><br>
-     ✉️ E-Mail: <strong>kontakt@jackclean.de</strong><br>
-     📍 Adresse: <strong>Musterstraße 1, 12345 Musterstadt</strong></p>
-</section>
-
-<footer>
-  <p>&copy; 2025 Jackclean. Alle Rechte vorbehalten.</p>
-</footer>
-
-</body>
-</html>
+  <!-- Leistungen -->
+  <section id="leistungen" class="max-w-7xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold mb-8 text-center">Unsere Leistungen</h3>
+    <div class="grid gap-10 md:grid-cols-3">
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+        <h4 class="text-xl font-semibold mb-3">Gebäudereinigung</h4>
+        <p>G
